@@ -744,10 +744,29 @@ address {
   display: block;
 }
 
-.contact-form-input {
+.contact-form-input, .contact-form-message {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
+.form-names {
+  font-family: var(--basic-title);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1,16;
+  color: var(--secondary-color);
+}
+
+.contact-form-message {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1,14;  
+  color: rgba(117, 117, 117, 0.5);
+}
