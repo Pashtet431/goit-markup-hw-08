@@ -393,6 +393,27 @@
                     <use href="./images/sprite.svg#close-icon"></use>
                 </svg>
             </button>
+
+            <form class="contact-form">
+               <p>Оставьте свои данные, мы вам перезвоним</p>
+               <label class="contact-form-field">Имя
+                   <input name="user_name" class="contact-form-input" type="text">
+               </label> 
+                <label class="contact-form-field">Телефон
+                    <input name="user_phone" class="contact-form-input" type="tel">
+                </label>
+                <label class="contact-form-field">Почта
+                    <input name="user_mail" class="contact-form-input" type="text">
+                </label>
+                <label class="contact-form-field">Комментарий
+                    <textarea name="" class="contact-form-message" placeholder="Введите текст"></textarea>
+                </label>
+                <div class="input-form-checkbox-wrapper">
+                    <input name="accept-policy" value="accept" type="checkbox" class="contact-form-checkbox" required>
+                    <label for="" class="contact-form-checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                    <button type="submit" class="contact-form-submit-btn">Отправить</button>
+                </div>
+            </form>
         </div>
     </div>
 

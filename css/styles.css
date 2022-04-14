@@ -718,6 +718,7 @@ address {
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 
 .modal-close-btn {
@@ -736,4 +737,17 @@ address {
   padding: 0;
   cursor: pointer;
 }  
+
+/* Модальное окно */
+
+.contact-form-field {
+  display: block;
+}
+
+.contact-form-input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
 
