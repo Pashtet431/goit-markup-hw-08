@@ -711,8 +711,8 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 521px;
-  height: 528px;
+  width: 528px;
+  height: 581px;
   background-color: var(--light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -744,11 +744,17 @@ address {
   display: block;
 }
 
-.contact-form-input, .contact-form-message {
+.contact-form-input  {
   width: 100%;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 42px;
+}
+
+.modal-icon-name, .modal-icon-tel, .modal-icon-mail {
+  position:relative;
   margin-top: 4px;
   margin-bottom: 10px;
 }
@@ -762,11 +768,49 @@ address {
   color: var(--secondary-color);
 }
 
+.form-titile {
+  margin-bottom: 12px;
+  font-family: var(--basic-title);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 1.15;
+  color: var(--main-color);
+}
+
 .contact-form-message {
-  font-family: 'Roboto';
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: var(--basic-title);
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 1,14;  
   color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-form-checkbox-label {
+  font-family: var(--basic-title);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.71;
+  color: var(--secondary-color);
+}
+
+.icon-modal {
+  position: absolute;
+  display: block;
+top: 50%;
+left: 12px;
+transform: translateY(-50%);
+}
+
+.contact-form-submit-btn {
+width: 200px;
+height: 50px;
 }
