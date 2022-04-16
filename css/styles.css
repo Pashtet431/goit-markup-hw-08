@@ -542,6 +542,28 @@ address {
   margin-right: 10px;
 }
 
+.subscribe-btn{
+    font-family: var(--basic-title);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border-width: 0;
+  border-radius: 4px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 /* =========== ПОРТФОЛИО ========== */
 
 /* Скрытый заголовок Н1 */
@@ -738,8 +760,6 @@ address {
   cursor: pointer;
 }  
 
-/* Модальное окно */
-
 .contact-form-field {
   display: block;
 }
@@ -771,7 +791,6 @@ address {
 .contact-form-input:focus + .icon-modal  {
 fill: var(--accent-color);
 }
-
 
 .form-names {
   font-family: var(--basic-title);
@@ -830,10 +849,6 @@ fill: var(--accent-color);
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* .input-form-checkbox-wrapper{
-margin-bottom: 30px;
-} */
-
 .contact-form-checkbox-label {
   display: flex;
   align-items: center;
@@ -843,6 +858,7 @@ margin-bottom: 30px;
   line-height: 24px;
   letter-spacing: 1.71;
   color: var(--secondary-color);
+  margin-bottom: 30px;
 }
 
 .contact-form-checkbox:focus +.contact-form-checkbox-label::before{
@@ -856,6 +872,7 @@ margin-bottom: 30px;
   background-image: url('../images/vector.svg');
   background-color: var(--accent-color);
   border-color: var(--accent-color);
+  box-shadow: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
   border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -883,13 +900,11 @@ margin-bottom: 30px;
 }
 
 .contact-form-submit-btn {
-
   font-family: var(--basic-title);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -897,14 +912,19 @@ margin-bottom: 30px;
   color: var(--light-color);
   background-color: var(--accent-color);
   cursor: pointer;
-
-box-shadow: none;
-
   width: 200px;
   height: 50px;
+  margin: 0 auto;
+  border-width: 0;
   border-radius: 4px;
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.contact-form-submit-btn:hover, 
+.contact-form-submit-btn:focus {
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
