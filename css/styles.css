@@ -8,6 +8,7 @@
   --background-color-comand: #f5f4fa;
   --background-color-hero: #c4c4c4;
   --social-icon-color: #afb1bb;
+  --foter-color: #2f303a;
 }
 
 .list {
@@ -457,7 +458,7 @@ address {
 
 .footer {
   display: block;
-  background-color: #2f303a;
+  background-color: var(--foter-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -523,10 +524,6 @@ address {
   border-radius: 50%;
 }
 
-.invitation-list-icon {
-  fill: var(--light-color);
-}
-
 .invitation-list-link,
 .invitation-list-link {
   background-color: rgba(255, 255, 255, 10%);
@@ -542,16 +539,88 @@ address {
   margin-right: 10px;
 }
 
+.mailing-label{
+  margin: 72px 215px 94px 93px;
+}
+
+.invitation-list-icon{
+  fill: var(--light-color);
+}
+
+.footer-invitation{
+  font-family: var(--basic-title);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.14;
+  text-transform: uppercase;
+  
+  color:var(--light-color);
+
+  margin-bottom: 20px;
+}
+
+.subscribe-field{
+  display: block;
+}
+
+.subscribe-mail{
+width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+border-radius: 4px;
+
+font-family: var(--basic-title);
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+letter-spacing: 1,25;
+color: var(--light-color);
+
+padding: 14px 16px;
+
+resize: none;
+background-color: var(--foter-color);
+}
+
+.subscribe-mail:focus{
+  outline: none;
+border-color: var(--accent-color);
+}
+
+.subscribe-mail::placeholder{
+  font-family: var(--basic-title);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.25;
+  
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe{
+  display: block;
+margin-left: 12px;
+}
+
 .subscribe-btn{
-    font-family: var(--basic-title);
+  position: absolute;
+  font-family: var(--basic-title);
   font-weight: 700;
   font-size: 16px;
+  line-height: 30px;
   line-height: 1.87;
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
   color: var(--light-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -560,9 +629,16 @@ address {
   margin: 0 auto;
   border-width: 0;
   border-radius: 4px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  
 }
 
+.subscribe-icon {
+  fill: var(--light-color);
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 10px;
+}
 
 /* =========== ПОРТФОЛИО ========== */
 
@@ -903,6 +979,7 @@ fill: var(--accent-color);
   font-family: var(--basic-title);
   font-weight: 700;
   font-size: 16px;
+  line-height: 30px;
   line-height: 1.87;
   display: block;
   justify-content: center;
