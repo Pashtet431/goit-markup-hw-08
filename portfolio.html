@@ -17,7 +17,8 @@
 </head>
 
 <body>
-    <!-- Шапка -->
+
+<!-- Шапка -->
 <header class="header">
     <div class="container header-container">
         <nav class="navigation">
@@ -41,7 +42,6 @@
                         <use href="./images/sprite.svg#icon-mail"></use>
                     </svg>info@devstudio.com
                 </a>
-                <!-- <a class="nav-list-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a> стара версія запису пошти-->
             </li>
             <li class="icon-phone">
                 <a class="nav-list-tel link" href="tel:+380961111111">
@@ -49,7 +49,6 @@
                         <use href="./images/sprite.svg#icon-tel"></use>
                     </svg>+38 096 111 11 11
                 </a>
-                <!-- <a class="nav-list link" href="tel:+380961111111">+38 096 111 11 11</a> стара версія запису телефону-->
             </li>
         </ul>
     </div>
@@ -189,7 +188,6 @@
     </main>
 
 <!-- Футер -->
-
     <footer class="footer">
         <div class="footer-container container">
             <div>
@@ -242,8 +240,24 @@
                     </li>
                 </ul>
             </div>
+            <div class="mailing-label">
+                <h3 class="footer-invitation">Подпишитесь на рассылку</h3>
+                <ul class="subscribe-list list">
+                    <li>
+                        <label class="subscribe-field">
+                            <textarea class="subscribe-mail" lang="en" placeholder="E-mail"></textarea>
+                        </label>
+                    </li>
+                    <li class="subscribe">
+                        <button type="submit" class="subscribe-btn">Подписаться
+                            <svg class="subscribe-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-    
     </footer>
 </body>
 </html>
