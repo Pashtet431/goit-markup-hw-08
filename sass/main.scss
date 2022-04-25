@@ -1,4 +1,14 @@
-@import './header';
+@import './utils/variables';
+@import './utils/visually-hidden';
 
-body {background-color: red;}
- h1 {color: aqua;}
+@import './base/common';
+@import './base/container';
+
+@import './components/modal-btn';
+@import './components/social-list-link';
+@import './components/_logo';
+@import './components/btn';
+
+@import './layout/navigation';
+@import './layout/header';
+@import './layout/hero';

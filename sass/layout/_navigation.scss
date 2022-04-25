@@ -1,0 +1,63 @@
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-contacts {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    position: relative;
+}
+
+.nav-contacts.current::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    border-radius: 2px;
+    bottom: -32px;
+    left: 0;
+    display: block;
+    background-color: var(--accent-color);
+}
+
+.nav-list,
+.nav-list-tel,
+.nav-list-mail {
+    list-style: none;
+    font-family: var(--basic-title);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+}
+
+.nav-title {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-list-tel:hover,
+.nav-list-tel:focus,
+.nav-contacts:hover,
+.nav-contacts:focus,
+.nav-list-f:hover,
+.nav-list-f:focus,
+.adress:hover,
+.address:focus,
+.nav-list-mail:hover,
+.nav-list-mail:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
