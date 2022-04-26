@@ -1,14 +1,17 @@
 @import './utils/variables';
-@import './utils/visually-hidden';
+@import './utils/visualy-hidden';
 
 @import './base/common';
-@import './base/container';
 
-@import './components/social-list-link';
-@import './components/_logo';
+@import './components/header';
+@import './components/logo';
+@import './components/navigation';
+@import './components/hero';
 @import './components/btn';
-@import './components/modal';
-
-@import './layout/navigation';
-@import './layout/header';
-@import './layout/hero';
+@import './components/title';
+@import './components/advantages';
+@import './components/icons';
+@import './components/images';
+@import './components/our-team';
+@import './components/contact-icons';
+@import './components/invitation';

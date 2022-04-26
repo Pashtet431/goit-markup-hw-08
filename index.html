@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./css/main.min.css">
-        <link rel="stylesheet" href="./css/styles.css">
+            <link rel="stylesheet" href="./css/main.min.css">    
+            <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
@@ -384,25 +384,22 @@
                     </li>
                 </ul>
             </div>
-           <div class="mailing-label">
-                <h3 class="footer-invitation">Подпишитесь на рассылку</h3>
-                <ul class="subscribe-list list">
-                    <li >
-                        <label class="subscribe-field">
-                            <textarea class="subscribe-mail" lang="en" placeholder="E-mail"></textarea>
-                        </label>
-                    </li>
-                    <li class="subscribe">
-                        <button type="submit" class="subscribe-btn">Подписаться
-                            <svg class="subscribe-icon" width="24" height="24">
-                                <use href="./images/sprite.svg#icon-send"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
+           <div class="mailing-footer">
+                <form class="subscribe-list list">
+                    <h3 class="footer-invitation">Подпишитесь на рассылку</h3>
+                    <div class="subscribe-field">
+                        <input type="email" class="subscribe-mail" name="email" lang="en" placeholder="E-mail" />  
+                        <button type="submit" class="subscribe-btn subscribe">Подписаться
+                        <svg class="subscribe-icon" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                    </div>
+                </form>
            </div>
         </div>        
     </footer>    
+
 <!-- Бекдроп -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -441,7 +438,7 @@
                         </svg>            
                     </span>
                 </label>
-                <label class="contact-form-field">
+                <label class="contact-form-comment">
                     <span class="form-names">Комментарий</span> 
                     <textarea class="contact-form-message" placeholder="Введите текст"></textarea>
                 </label>

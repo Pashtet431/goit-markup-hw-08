@@ -43,7 +43,32 @@ address {
     font-style: normal;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+.work-section {
+    padding-top: 0;
+}
+
+.footer {
+    display: block;
+    background-color: var(--foter-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    align-items: baseline;
+    display: flex;
+}
+

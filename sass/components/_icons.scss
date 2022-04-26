@@ -1,0 +1,31 @@
+.icon-advantages {
+    display: flex;
+}
+
+.client-icon-list {
+    width: 170px;
+    height: 92px;
+}
+
+.clients-icon-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-icon-link:hover,
+.clients-icon-link:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.clients-icon-link:hover .client-icon,
+.clients-icon-link:focus .client-icon {
+    fill: var(--accent-color);
+}
+
