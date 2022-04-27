@@ -1,0 +1,89 @@
+.mailing-footer {
+    display: block;
+    margin-left: auto;
+}
+
+.subscribe-list {
+    display: block;
+}
+
+.subscribe-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-mail {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-family: var(--basic-title);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1, 25;
+    color: var(--light-color);
+
+    padding: 14px 16px;
+
+    resize: none;
+    background-color: var(--foter-color);
+}
+
+.subscribe-mail:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.subscribe-mail::placeholder {
+    font-family: var(--basic-title);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe {
+    display: block;
+    margin-left: 12px;
+}
+
+.subscribe-btn {
+    font-family: var(--basic-title);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    line-height: 1.87;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--light-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    border-width: 0;
+    border-radius: 4px;
+
+    margin-left: 12px;
+}
+
+.subscribe-icon {
+    fill: var(--light-color);
+    margin-top: 13px;
+    margin-bottom: 13px;
+    margin-left: 10px;
+}

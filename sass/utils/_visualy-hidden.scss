@@ -8,3 +8,9 @@
     position: absolute;
     width: 1px;
 }
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

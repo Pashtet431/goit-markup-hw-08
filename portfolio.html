@@ -241,22 +241,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="mailing-label">
-                <h3 class="footer-invitation">Подпишитесь на рассылку</h3>
-                <ul class="subscribe-list list">
-                    <li>
-                        <label class="subscribe-field">
-                            <textarea class="subscribe-mail" lang="en" placeholder="E-mail"></textarea>
-                        </label>
-                    </li>
-                    <li class="subscribe">
-                        <button type="submit" class="subscribe-btn">Подписаться
+            <div class="mailing-footer">
+                <form class="subscribe-list list">
+                    <h3 class="footer-invitation">Подпишитесь на рассылку</h3>
+                    <div class="subscribe-field">
+                        <input type="email" class="subscribe-mail" name="email" lang="en" placeholder="E-mail" />
+                        <button type="submit" class="subscribe-btn subscribe">Подписаться
                             <svg class="subscribe-icon" width="24" height="24">
                                 <use href="./images/sprite.svg#icon-send"></use>
                             </svg>
                         </button>
-                    </li>
-                </ul>
+                    </div>
+                </form>
             </div>
         </div>
     </footer>
