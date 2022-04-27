@@ -1,3 +1,8 @@
+.advantages-list:not(:last-child) {
+    margin-top: 94px;
+    margin-left: 30px;
+}
+
 .advantages {
     font-family: var(--basic-title);
     font-weight: 700;
@@ -11,16 +16,11 @@
     margin-top: 30px;
 }
 
-.advantage-background {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 270px;
-    height: 120px;
-    background-color: var(--background-color-comand);
-}
-
-.advantages-list:not(:last-child) {
-    margin-top: 94px;
-    margin-left: 30px;
-}
+.advantages-background {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 120px;
+        background-color: var(--background-color-comand);
+    }

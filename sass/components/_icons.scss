@@ -16,17 +16,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.clients-icon-link:hover,
-.clients-icon-link:focus {
-    border: 1px solid var(--accent-color);
-    fill: var(--accent-color);
-}
+        &:hover,
+        &:focus {
+            border: 1px solid var(--accent-color);
+            fill: var(--accent-color);
+        }
 
-.clients-icon-link:hover .client-icon,
-.clients-icon-link:focus .client-icon {
-    fill: var(--accent-color);
+        &:hover .client-icon,
+        &:focus .client-icon {
+            fill: var(--accent-color);
+        }
 }
 
 .soc-icons-f:not(:last-child) {

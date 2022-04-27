@@ -282,8 +282,7 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-p:hover,
-.btn-p:focus {
+.btn-p:hover, .btn-p:focus {
   background-color: var(--accent-color);
   color: var(--light-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -327,6 +326,11 @@ address {
   margin-bottom: 50px;
 }
 
+.advantages-list:not(:last-child) {
+  margin-top: 94px;
+  margin-left: 30px;
+}
+
 .advantages {
   font-family: var(--basic-title);
   font-weight: 700;
@@ -339,18 +343,13 @@ address {
   margin-top: 30px;
 }
 
-.advantage-background {
+.advantages-background {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 270px;
   height: 120px;
   background-color: var(--background-color-comand);
-}
-
-.advantages-list:not(:last-child) {
-  margin-top: 94px;
-  margin-left: 30px;
 }
 
 .icon-advantages {
@@ -373,8 +372,7 @@ address {
   justify-content: center;
 }
 
-.clients-icon-link:hover,
-.clients-icon-link:focus {
+.clients-icon-link:hover, .clients-icon-link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -477,20 +475,19 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-icon,
-.client-icon {
-  fill: var(--social-icon-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--light-color);
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover, .social-list-link:focus {
   background-color: var(--accent-color);
+}
+
+.social-list-icon,
+.client-icon {
+  fill: var(--social-icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons {
@@ -502,15 +499,15 @@ address {
   margin-right: 10px;
 }
 
-.icon-post, .icon-tel,
+.icon-post,
 .icon-phone:not(:last-child) {
   display: flex;
   margin-right: 50px;
-  fill: var(--secondary-color);
 }
 
 .icon-mail,
 .icon-tel {
+  fill: var(--secondary-color);
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -526,16 +523,11 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-}
-
-.invitation-list-link,
-.invitation-list-link {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.invitation-list-link:hover,
-.invitation-list-link:focus {
+.invitation-list-link:hover, .invitation-list-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -558,29 +550,9 @@ address {
   margin-left: 70px;
 }
 
-.footer-invitation {
-  font-family: var(--basic-title);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--light-color);
-}
-
 .mailing-footer {
   display: block;
   margin-left: auto;
-}
-
-.subscribe-list {
-  display: block;
-}
-
-.subscribe-field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .subscribe-mail {
@@ -652,15 +624,29 @@ address {
   margin-left: 10px;
 }
 
+.subscribe-list {
+  display: block;
+}
+
+.subscribe-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .main-work-link {
   position: relative;
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-work-link:hover,
-.main-work-link:focus {
+.main-work-link:hover, .main-work-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.main-work-link:hover .overlay,
+.main-work-link:focus .overlay {
+  transform: translateY(0%);
 }
 
 .list-p {
@@ -714,6 +700,11 @@ address {
   margin-top: 4px;
 }
 
+.work-image {
+  position: relative;
+  overflow: hidden;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -734,16 +725,6 @@ address {
   color: var(--light-color);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.work-image {
-  position: relative;
-  overflow: hidden;
-}
-
-.main-work-link:hover .overlay,
-.main-work-link:focus .overlay {
-  transform: translateY(0%);
 }
 
 .backdrop {
@@ -809,13 +790,7 @@ address {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon-name {
-  position: relative;
-  display: block;
-}
-
-.contact-form-input:hover,
-.contact-form-input:focus {
+.contact-form-input:hover, .contact-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -823,6 +798,11 @@ address {
 .contact-form-input:hover + .icon-modal,
 .contact-form-input:focus + .icon-modal {
   fill: var(--accent-color);
+}
+
+.modal-icon-name {
+  position: relative;
+  display: block;
 }
 
 .form-names {
@@ -866,8 +846,7 @@ address {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-message:hover,
-.contact-form-message:focus {
+.contact-form-message:hover, .contact-form-message:focus {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -894,6 +873,19 @@ address {
   margin-bottom: 30px;
 }
 
+.contact-form-checkbox-label::before {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--logo-color);
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  content: '';
+  cursor: pointer;
+  margin-right: 8px;
+}
+
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
   border-color: var(--accent-color);
   outline: 1px solid var(--accent-color);
@@ -907,19 +899,6 @@ address {
   border-color: var(--accent-color);
   box-shadow: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-form-checkbox-label::before {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--logo-color);
-  border-radius: 2px;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  content: '';
-  cursor: pointer;
-  margin-right: 8px;
 }
 
 .icon-modal {
@@ -953,8 +932,7 @@ address {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-submit-btn:hover,
-.contact-form-submit-btn:focus {
+.contact-form-submit-btn:hover, .contact-form-submit-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*# sourceMappingURL=main.css.map */
