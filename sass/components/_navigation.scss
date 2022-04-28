@@ -8,10 +8,7 @@
 }
 
 .nav-contacts {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include fonts (Roboto, 500, 14px, 1.14);
     letter-spacing: 0.02em;
     color: var(--main-color);
     position: relative;
@@ -33,10 +30,7 @@
 .nav-list-tel,
 .nav-list-mail {
     list-style: none;
-    font-family: var(--basic-title);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    @include fonts (var(--basic-title), 500, 14px, 1.14);
     letter-spacing: 0.02em;
     color: var(--secondary-color);
     display: flex;
@@ -63,10 +57,7 @@
 }
 
 .nav-list-f {
-    font-family: var(--basic-title);
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    @include fonts (var(--basic-title), 400, 14px, 1.71);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -76,10 +67,7 @@
 }
 
 .adress {
-    font-family: var(--basic-title);
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    @include fonts (var(--basic-title), 400, 14px, 1.71);
     letter-spacing: 0.03em;
     color: var(--light-color);
 }

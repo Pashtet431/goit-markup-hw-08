@@ -1,8 +1,5 @@
 .main-title {
-    font-family: var(--basic-title);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include fonts (var(--basic-title), 900, 44px, 1.36);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -15,10 +12,7 @@
 }
 
 .advantage-text {
-    font-family: var(--basic-title);
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    @include fonts (var(--basic-title), 400, 14px, 1.71);
     letter-spacing: 0.03em;
     text-transform: none;
     color: var(--secondary-color);
@@ -28,10 +22,7 @@
 }
 
 .secondary-title {
-    font-family: var(--basic-title);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @include fonts (var(--basic-title), 700, 36px, 1.16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);

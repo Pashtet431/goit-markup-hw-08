@@ -10,10 +10,7 @@
     box-sizing: border-box;
     border-radius: 4px;
 
-    font-family: var(--basic-title);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    @include fonts (var(--basic-title), 400, 16px, 1.25);
     display: flex;
     align-items: center;
     letter-spacing: 1, 25;
@@ -30,10 +27,7 @@
     }
 
     &::placeholder {
-        font-family: var(--basic-title);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
+        @include fonts (var(--basic-title), 400, 16px, 1.25);
         display: flex;
         align-items: center;
         letter-spacing: 1.25;
@@ -48,11 +42,7 @@
 }
 
 .subscribe-btn {
-    font-family: var(--basic-title);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    line-height: 1.87;
+    @include fonts (var(--basic-title), 700, 16px, 1.87);
     display: flex;
     justify-content: center;
     align-items: center;

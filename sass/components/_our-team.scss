@@ -11,10 +11,7 @@
 }
 
 .worker-title {
-    font-family: var(--basic-title);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+    @include fonts (var(--basic-title), 500, 16px, 1.18);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
@@ -23,9 +20,7 @@
 }
 
 .worker-position {
-    font-family: var(--basic-title);
-    font-size: 16px;
-    line-height: 1.18;
+    @include fonts (var(--basic-title), 400,16px, 1.18);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
