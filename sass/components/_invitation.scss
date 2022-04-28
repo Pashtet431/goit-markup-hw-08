@@ -24,11 +24,8 @@
 }
 
 .footer-invitation {
-    font-family: var(--basic-title);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 1.14;
+    @include fonts (var(--basic-title), 700, 14px, 1,14);
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: var(--light-color);

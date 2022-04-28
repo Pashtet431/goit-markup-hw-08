@@ -1,13 +1,10 @@
 .btn {
-    font-family: var(--basic-title);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-
+    @include fonts (var(--basic-title), 700, 16px, 1.87);
+    letter-spacing: 0.06em;
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
+    
     color: var(--light-color);
     background-color: var(--accent-color);
     cursor: pointer;
@@ -22,10 +19,7 @@
 }
 
 .btn-p {
-    font-family: var(--basic-title);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
+    @include fonts (var(--basic-title), 500, 16px, 1.63);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
