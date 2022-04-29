@@ -34,7 +34,7 @@
   justify-content: space-between;
 }
 
-.image {
+.our-team__image {
   background-color: var(--light-color);
 }
 
@@ -151,7 +151,7 @@ address {
   align-items: center;
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -178,8 +178,8 @@ address {
 }
 
 .nav-list,
-.nav-list-tel,
-.nav-list-mail {
+.nav-list__tel,
+.nav-list__mail {
   list-style: none;
   font-family: var(--basic-title);
   font-weight: 500;
@@ -196,16 +196,16 @@ address {
   margin-left: auto;
 }
 
-.nav-list-tel:hover,
-.nav-list-tel:focus,
+.nav-list__tel:hover,
+.nav-list__tel:focus,
 .nav-contacts:hover,
 .nav-contacts:focus,
 .nav-list-f:hover,
 .nav-list-f:focus,
 .adress:hover,
 .address:focus,
-.nav-list-mail:hover,
-.nav-list-mail:focus {
+.nav-list__mail:hover,
+.nav-list__mail:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -356,12 +356,12 @@ address {
   display: flex;
 }
 
-.client-icon-list {
+.clients__icon-list {
   width: 170px;
   height: 92px;
 }
 
-.clients-icon-link {
+.clients__icon-link {
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;
@@ -372,13 +372,13 @@ address {
   justify-content: center;
 }
 
-.clients-icon-link:hover, .clients-icon-link:focus {
+.clients__icon-link:hover, .clients__icon-link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
 
-.clients-icon-link:hover .client-icon,
-.clients-icon-link:focus .client-icon {
+.clients__icon-link:hover .client-icon,
+.clients__icon-link:focus .client-icon {
   fill: var(--accent-color);
 }
 
@@ -418,7 +418,7 @@ address {
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.image {
+.our-team__image {
   justify-content: center;
   margin-left: 30px;
   margin-top: 30px;
@@ -440,7 +440,7 @@ address {
   margin-top: -30px;
 }
 
-.worker-title {
+.workers__worker-title {
   font-family: var(--basic-title);
   font-weight: 500;
   font-size: 16px;
@@ -451,7 +451,7 @@ address {
   margin-bottom: 10px;
 }
 
-.worker-position {
+.workers__worker-position {
   font-family: var(--basic-title);
   font-size: 16px;
   line-height: 1.18;
@@ -460,7 +460,7 @@ address {
   color: var(--secondary-color);
 }
 
-.worker-names {
+.workers {
   padding-top: 30px;
   padding-bottom: 30px;
 }

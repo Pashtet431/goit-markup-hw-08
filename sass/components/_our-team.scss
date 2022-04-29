@@ -10,7 +10,7 @@
     margin-top: -30px;
 }
 
-.worker-title {
+.workers__worker-title {
     @include fonts (var(--basic-title), 500, 16px, 1.18);
     text-align: center;
     letter-spacing: 0.03em;
@@ -19,14 +19,14 @@
     margin-bottom: 10px;
 }
 
-.worker-position {
+.workers__worker-position {
     @include fonts (var(--basic-title), 400,16px, 1.18);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
 }
 
-.worker-names {
+.workers {
     padding-top: 30px;
     padding-bottom: 30px;
 }

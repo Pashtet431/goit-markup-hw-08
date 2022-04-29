@@ -23,27 +23,27 @@
             <nav class="navigation">
                 <a class="logo link" lang="en" href="./index.html"> <span class="logo-web">Web</span>Studio</a>
                 <ul class="nav-list"> 
-                    <li class="nav-list-item">
+                    <li class="nav-list__item">
                         <a class="nav-contacts link current" href="./index.html">Студия</a>
                     </li>
-                    <li class="nav-list-item">
+                    <li class="nav-list__item">
                         <a class="nav-contacts link" href="./portfolio.html">Портфолио</a>
                     </li>
-                    <li class="nav-list-item">
+                    <li class="nav-list__item">
                         <a class="nav-contacts link" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
                 <ul class="nav-list nav-title">
                     <li class="icon-post">
-                        <a class="nav-list-mail link" href="mailto:info@devstudio.com">
+                        <a class="nav-list__mail link" href="mailto:info@devstudio.com">
                             <svg class="icon-mail" width="16" height="12">
                                 <use href="./images/sprite.svg#icon-mail"></use>
                             </svg>info@devstudio.com
                         </a>                                                                     
                     </li>
                     <li class="icon-phone">
-                        <a class="nav-list-tel link" href="tel:+380961111111">
+                        <a class="nav-list__tel link" href="tel:+380961111111">
                             <svg class="icon-tel" width="12" height="16">
                                 <use href="./images/sprite.svg#icon-tel"></use>
                             </svg>+38 096 111 11 11
@@ -107,7 +107,7 @@
         <section class="section work-section">
             <div class="container">
                 <h2 class="secondary-title">Чем мы занимаемся</h2>
-                <ul class="list we-do">
+                <ul class="we-do list">
                     <li class="images">                       
                         <img src="./images/image-1.jpg" alt="worker at the desk" width="370" height="294">
                         <p class="title-label">Десктопные приложения</p>                       
@@ -127,12 +127,12 @@
         <section class="command section">
             <div class="container">
                 <h2 class="secondary-title">Наша команда</h2>
-                <ul class="list our-team">
-                    <li class="image">
+                <ul class="our-team list">
+                    <li class="our-team__image">
                         <img src="./images/master1.jpg" alt="Ihor" width="270" height="260" />
-                        <div class="worker-names">
-                            <h3 class="worker-title">Игорь Демьяненко</h3>
-                            <p class="worker-position">Product Designer</p>
+                        <div class="workers">
+                            <h3 class="workers__worker-title">Игорь Демьяненко</h3>
+                            <p class="workers__worker-position">Product Designer</p>
                             <ul class="social-icons list">
                                 <li class="soc-icons-list">
                                     <a class="social-list-link" href="">
@@ -165,11 +165,11 @@
                             </ul>                                                           
                         </div>
                     </li>
-                    <li class="image">
+                    <li class="our-team__image">
                         <img src="./images/master2.jpg" alt="Olga" width="270" height="260" />
-                        <div class="worker-names">
-                            <h3 class="worker-title">Ольга Репина</h3>
-                            <p class="worker-position">Frontend Developer</p>
+                        <div class="workers">
+                            <h3 class="workers__worker-title">Ольга Репина</h3>
+                            <p class="workers__worker-position">Frontend Developer</p>
                             <ul class="social-icons list">
                                <li class="soc-icons-list">
                                     <a class="social-list-link" href="">
@@ -202,11 +202,11 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="image">
+                    <li class="our-team__image">
                         <img src="./images/master3.jpg" alt="Nikolay" width="270" height="260" />
-                        <div class="worker-names">
-                            <h3 class="worker-title">Николай Тарасов</h3>
-                            <p class="worker-position">Marketing</p>
+                        <div class="workers">
+                            <h3 class="workers__worker-title">Николай Тарасов</h3>
+                            <p class="workers__worker-position">Marketing</p>
                             <ul class="social-icons list">
                                 <li class="soc-icons-list">
                                     <a class="social-list-link" href="">
@@ -239,11 +239,11 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="image">
+                    <li class="our-team__image">
                         <img src="./images/master4.jpg" alt="Mihail" width="270" height="260" />
-                        <div class="worker-names">
-                            <h3 class="worker-title">Михаил Ермаков</h3>
-                            <p class="worker-position">UI Designer</p>
+                        <div class="workers">
+                            <h3 class="workers__worker-title">Михаил Ермаков</h3>
+                            <p class="workers__worker-position">UI Designer</p>
                             <ul class="social-icons list">
                                 <li class="soc-icons-list">
                                     <a class="social-list-link" href="">
@@ -283,50 +283,50 @@
         <section class="section">
             <div class="container">
                 <h2 class="secondary-title">Постоянные клиенты</h2>
-                    <ul class="clients list">
-                        <li class="client-icon-list">
-                            <a class="clients-icon-link link" href="https://www.google.com.ua">
-                                <svg class="client-icon" width="106" height="60">
-                                    <use href="./images/sprite.svg#icon-logo"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="client-icon-list">
-                            <a class="clients-icon-link" href="">
-                                <svg class="client-icon" width="106" height="60">
-                                    <use href="./images/sprite.svg#icon-logo-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="client-icon-list">
-                            <a class="clients-icon-link" href="">
-                                <svg class="client-icon" width="106" height="60">
-                                    <use href="./images/sprite.svg#icon-logo-2"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="client-icon-list">
-                            <a class="clients-icon-link" href="">
-                                <svg class="client-icon" width="106" height="60">
-                                    <use href="./images/sprite.svg#icon-logo-3"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="client-icon-list">
-                            <a class="clients-icon-link" href="">
-                                <svg class="client-icon" width="106" height="60">
-                                    <use href="./images/sprite.svg#icon-logo-4"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="client-icon-list">
-                            <a class="clients-icon-link" href="">
-                                <svg class="client-icon" width="106" height="60">
-                                    <use href="./images/sprite.svg#icon-logo-5"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                <ul class="clients list">
+                    <li class="clients__icon-list">
+                        <a class="clients__icon-link link" href="https://www.google.com.ua">
+                            <svg class="client-icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-logo"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__icon-list">
+                        <a class="clients__icon-link" href="">
+                            <svg class="client-icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-logo-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__icon-list">
+                        <a class="clients__icon-link" href="">
+                            <svg class="client-icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-logo-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__icon-list">
+                        <a class="clients__icon-link" href="">
+                            <svg class="client-icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-logo-3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__icon-list">
+                        <a class="clients__icon-link" href="">
+                            <svg class="client-icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-logo-4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__icon-list">
+                        <a class="clients__icon-link" href="">
+                            <svg class="client-icon" width="106" height="60">
+                                <use href="./images/sprite.svg#icon-logo-5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
