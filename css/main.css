@@ -818,7 +818,7 @@ address {
   color: var(--secondary-color);
 }
 
-.form-titile {
+.form-title {
   margin-bottom: 12px;
   font-family: var(--basic-title);
   font-weight: 700;
