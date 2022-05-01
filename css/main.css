@@ -112,12 +112,12 @@ address {
   border-bottom: 1px solid #eeeeee;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.logo-web {
+.logo__web {
   color: var(--accent-color);
 }
 
