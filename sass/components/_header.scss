@@ -1,10 +1,97 @@
-.header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #eeeeee;
-}
+// .header {
+//     padding-top: 24px;
+//     padding-bottom: 24px;
+//     border-bottom: 1px solid #eeeeee;
+// }
 
-.header__container {
-    display: flex;
-    align-items: center;
-}
+// .header__container {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .navigation {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .nav-list__item:not(:last-child) {
+//     margin-right: 50px;
+// }
+
+// .nav-list__tel:hover,
+// .nav-list__tel:focus,
+// .nav-contacts:hover,
+// .nav-contacts:focus,
+// .nav-list-f:hover,
+// .nav-list-f:focus,
+// .adress:hover,
+// .address:focus,
+// .nav-list__mail:hover,
+// .nav-list__mail:focus {
+//     color: var(--accent-color);
+//     fill: var(--accent-color);
+// }
+
+// .nav-contacts {
+//     @include fonts (Roboto, 500, 14px, 1.14);
+//     letter-spacing: 0.02em;
+//     color: var(--main-color);
+//     position: relative;
+
+//     &.current::after {
+//         content: "";
+//         width: 100%;
+//         position: absolute;
+//         height: 4px;
+//         border-radius: 2px;
+//         bottom: -32px;
+//         left: 0;
+//         display: block;
+//         background-color: var(--accent-color);
+//     }
+// }
+
+// .nav-list,
+// .nav-list__tel,
+// .nav-list__mail {
+//     list-style: none;
+//     @include fonts (var(--basic-title), 500, 14px, 1.14);
+//     letter-spacing: 0.02em;
+//     color: var(--secondary-color);
+//     display: flex;
+//     align-items: center;
+// }
+
+// .nav-title {
+//     display: flex;
+//     margin-left: auto;
+// }
+
+// .icon-post,
+// .icon-phone:not(:last-child) {
+//     display: flex;
+//     margin-right: 50px;
+// }
+
+// .icon-mail,
+// .icon-tel {
+//     fill: var(--secondary-color);
+//     margin-right: 10px;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .logo__web {
+//     color: var(--accent-color);
+// }
+
+// .logo {
+//     font-family: 'Raleway', sans-serif;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 1.2;
+//     letter-spacing: 0.03em;
+//     color: var(--logo-color);
+
+//     margin-right: 93px;
+// }
+

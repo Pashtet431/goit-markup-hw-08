@@ -1,3 +1,19 @@
+.nav-list-f {
+    @include fonts (var(--basic-title), 400, 14px, 1.71);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-nav {
+    margin-top: 9px;
+}
+
+.adress {
+    @include fonts (var(--basic-title), 400, 14px, 1.71);
+    letter-spacing: 0.03em;
+    color: var(--light-color);
+}
+
 .mailing-footer {
     display: block;
     margin-left: auto;
