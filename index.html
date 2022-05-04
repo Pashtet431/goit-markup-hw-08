@@ -17,33 +17,43 @@
 </head>
 <body>
 
-    <!-- Шапка -->
+<!-- Шапка -->
     <header class="header">
         <div class="container header__container">
             <nav class="navigation">
-                <a class="logo link" lang="en" href="./index.html"> <span class="logo__web">Web</span>Studio</a>
+                <a class="logo" lang="en" href="./index.html"> <span class="logo__web">Web</span>Studio</a>
                 <ul class="nav-list"> 
                     <li class="nav-list__item">
-                        <a class="nav-contacts link current" href="./index.html">Студия</a>
+                        <a class="nav-list__link nav-list__link--current" href="./index.html">Студия</a>
+                        <!-- <a class=" nav-contacts link current" href="./index.html">Студия</a> -->
                     </li>
                     <li class="nav-list__item">
-                        <a class="nav-contacts link" href="./portfolio.html">Портфолио</a>
+                        <a class="nav-list__link" href="./portfolio.html">Портфолио</a>
+                        <!-- <a class="nav-contacts link" href="./portfolio.html">Портфолио</a> -->
                     </li>
                     <li class="nav-list__item">
-                        <a class="nav-contacts link" href="">Контакты</a>
+                        <a class="nav-list__link" href="">Контакты</a>
+                        <!-- <a class="nav-contacts link" href="">Контакты</a> -->
                     </li>
                 </ul>
             </nav>
-                <ul class="nav-list nav-title">
+                 <button type="button" class="mobile-menu-btn">
+                     <svg class="mobile-menu-btn__icon" width="40" height="40">
+                         <use href="./images/sprite.svg#burger-mobile-menu"></use>
+
+                     </svg>
+                 </button>
+                <ul class="contacts">
+                <!-- <ul class="nav-list nav-title"> -->
                     <li class="icon-post">
-                        <a class="nav-list__mail link" href="mailto:info@devstudio.com">
+                        <a class="contacts__mail" href="mailto:info@devstudio.com">
                             <svg class="icon-mail" width="16" height="12">
                                 <use href="./images/sprite.svg#icon-mail"></use>
                             </svg>info@devstudio.com
                         </a>                                                                     
                     </li>
                     <li class="icon-phone">
-                        <a class="nav-list__tel link" href="tel:+380961111111">
+                        <a class="contacts__tel" href="tel:+380961111111">
                             <svg class="icon-tel" width="12" height="16">
                                 <use href="./images/sprite.svg#icon-tel"></use>
                             </svg>+38 096 111 11 11
@@ -285,7 +295,7 @@
                 <h2 class="secondary-title">Постоянные клиенты</h2>
                 <ul class="clients list">
                     <li class="clients__icon-list">
-                        <a class="clients__icon-link link" href="https://www.google.com.ua">
+                        <a class="clients__icon-link" href="https://www.google.com.ua">
                             <svg class="client-icon" width="106" height="60">
                                 <use href="./images/sprite.svg#icon-logo"></use>
                             </svg>
@@ -338,14 +348,14 @@
             <address class="adre">
                 <ul class="contacts list-f">
                     <li>
-                        <a href="https://goo.gl/maps/ViY8MvTfZeBaugTC6" class="adress link" target="_blank">
+                        <a href="https://goo.gl/maps/ViY8MvTfZeBaugTC6" class="adress" target="_blank">
                             г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
                     <li class="footer-nav">
-                        <a class="nav-list-f link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="nav-list-f" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li class="footer-nav">
-                        <a class="nav-list-f link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a class="nav-list-f" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </address>

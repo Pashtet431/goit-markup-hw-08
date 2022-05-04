@@ -2,6 +2,8 @@
     position: relative;
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
     &:hover,
     &:focus {
@@ -49,6 +51,12 @@
     @include fonts (var(--basic-title), 700, 18px, 2);
     letter-spacing: 0.06em;
     color: var(--main-color);
+}
+
+.work-type {
+    @include fonts (var(--basic-title), 400, 16px, 1.87);
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
 .work-image {
