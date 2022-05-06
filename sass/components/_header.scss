@@ -19,6 +19,12 @@
     align-items: center;
 }
 
+.mobile-menu__container{
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
 .mobile-menu-btn{
     background-color: transparent;
     border: none;
@@ -44,6 +50,49 @@
     cursor: pointer;
     background-color: transparent;
     line-height: 0;
+}
+
+.mobile-menu__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu__navigation {
+    display: block;
+    padding-top: 48px;
+}
+
+.mobile-menu__contacts {
+    display: block;
+    padding-top: 302px;
+}
+
+.mobile-menu__nav{
+    @include fonts (Roboto, 500, 40px, 1.17);
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    cursor: pointer;
+}
+
+.mobile-menu__tel{
+    @include fonts (Roboto, 500, 34px, 1.17);
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.mobile-menu__mail {
+    @include fonts (Roboto, 500, 24px, 1.16);
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .mobile-menu{
