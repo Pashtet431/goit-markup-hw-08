@@ -37,7 +37,8 @@
                     </li>
                 </ul>
             </nav>
-                 <button type="button" class="mobile-menu-btn">
+            
+                 <button type="button" class="mobile-menu-btn" data-menu-open>
                      <svg class="mobile-menu-btn__icon" width="40" height="40">
                          <use href="./images/sprite.svg#burger-mobile-menu"></use>
 
@@ -61,9 +62,9 @@
                     </li>
                 </ul>
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu" data-menu>
             <div class="container mobile-menu__container">
-                <button class="mobile-menu__close-btn">
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
                     <svg class="mobile-menu__close-btn" width="40" height="40">
                         <use href="./images/sprite.svg#close-icon"></use>
                     </svg>
@@ -74,25 +75,25 @@
                     <li><a class="mobile-menu__nav" href="">Контакты</a></li>
                 </ul>
                 <ul class="mobile-menu__contacts mobile-menu__list">
-                    <li><a class="mobile-menu__tel" href="">+38 096 111 11 11</a></li>
-                    <li><a class="mobile-menu__mail" href="">info@devstudio.com</a></li>                
+                    <li class="mobile-contact"><a class="mobile-menu__tel" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+                    <li class="mobile-contact"><a class="mobile-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>                
                 </ul>
                 <ul class="mobile-menu__social mobile-menu__list">
-                    <li><a class="mobile-menu__link" href="" lang="en">link</a></li>
-                    <li><a class="mobile-menu__link" href="" lang="en">link</a></li>
-                    <li><a class="mobile-menu__link" href="" lang="en">link</a></li>
-                    <li><a class="mobile-menu__link" href="" lang="en">link</a></li>
+                    <li class="mobile-menu__soc"><a class="mobile-menu__link" href="" lang="en">Instagram</a></li>
+                    <li class="mobile-menu__soc"><a class="mobile-menu__link" href="" lang="en">Twitter</a></li>
+                    <li class="mobile-menu__soc"><a class="mobile-menu__link" href="" lang="en">Facebook</a></li>
+                    <li class="mobile-menu__soc"><a class="mobile-menu__link" href="" lang="en">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <main>
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container hero-list">
                 <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="btn" type="button" data-modal-open>Заказать услугу</button>
             </div>            
-        </section> -->
+        </section>
 <!-- Наши преимущества -->
         <!-- <section class="section">
             <div class="container">
@@ -488,7 +489,7 @@
     </div> -->
 
     <script src="./js/modal.js"></script>
-    <script>src="./js/menu/.js"</script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

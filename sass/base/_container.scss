@@ -9,7 +9,6 @@
 .container {
     padding-left: 15px;
     padding-right: 15px; 
-   
 }
 
 //480px
@@ -25,7 +24,7 @@
 @media screen and (min-width: 768px) {
     .container{
         width: 720px;
-        background-color: blue;
+        background-color: transparent;
     }
     
 }
