@@ -38,10 +38,6 @@ a {
   justify-content: space-between;
 }
 
-.our-team__image {
-  background-color: var(--light-color);
-}
-
 body {
   font-family: var(--basic-title);
   color: var(--main-color);
@@ -92,11 +88,6 @@ address {
 
 .list-f {
   list-style: none;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -474,15 +465,14 @@ address {
   padding-bottom: 60px;
 }
 
+.work-section {
+  display: none;
+}
+
 .icon-advantages {
   display: block;
   align-items: center;
   justify-content: center;
-}
-
-.clients__icon-list {
-  width: 170px;
-  height: 92px;
 }
 
 .clients__icon-link {
@@ -544,26 +534,26 @@ address {
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.our-team__image {
-  justify-content: center;
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 120px) / 4);
-  background-color: var(--light-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
 .command {
   background-color: var(--background-color-comand);
 }
 
-.our-team,
+.desktop-team,
 .we-do {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  justify-content: center;
+}
+
+.desktop-master {
+  display: none;
+}
+
+.our-team__image {
+  margin-top: 30px;
+  background-color: var(--light-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .workers__worker-title {
@@ -624,6 +614,30 @@ address {
 
 .soc-icons-list:not(:last-child) {
   margin-right: 10px;
+}
+
+.mobile-title {
+  font-family: var(--basic-title);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.clients__icon-list {
+  width: 210px;
+  height: 92px;
 }
 
 .invitation-icons {
