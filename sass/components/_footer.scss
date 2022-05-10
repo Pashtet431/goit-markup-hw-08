@@ -1,3 +1,9 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-list-f {
     @include fonts (var(--basic-title), 400, 14px, 1.71);
     letter-spacing: 0.03em;
@@ -6,8 +12,18 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 60px;
+}
+
 .footer-nav {
-    margin-top: 9px;
+    // margin-top: 9px;
+    margin-top: 8px;
 }
 
 .adress {
@@ -24,7 +40,8 @@
 }
 
 .subscribe-mail {
-    width: 358px;
+    // width: 358px;
+    width: calc(100vw - 30px);
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -74,11 +91,12 @@
     cursor: pointer;
     width: 200px;
     height: 50px;
-    margin: 0 auto;
+    // margin: 0 auto;
     border-width: 0;
     border-radius: 4px;
 
     margin-left: 12px;
+    margin-top: 20px;
 }
 
 .subscribe-icon {
@@ -89,11 +107,17 @@
 }
 
 .subscribe-list {
-    display: block;
+    // display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .subscribe-field {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }

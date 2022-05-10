@@ -65,17 +65,20 @@ address {
 
 .footer {
     display: block;
+    justify-content: center;
+    align-items: center;
     background-color: var(--foter-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.footer-container {
-    align-items: baseline;
-    display: flex;
-}
+
 
 .list-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+
 }
 

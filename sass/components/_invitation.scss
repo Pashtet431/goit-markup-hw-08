@@ -1,5 +1,6 @@
 .invitation-icons {
-    margin-top: 20px;
+    // margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .invitation-list-link {
@@ -34,5 +35,9 @@
 }
 
 .invitation {
-    margin-left: 70px;
+    // margin-left: 70px;
+display: flex;
+justify-content: center;
+align-items: center;    
+flex-direction: column;
 }
