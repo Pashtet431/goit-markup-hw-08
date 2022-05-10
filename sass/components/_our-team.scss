@@ -91,29 +91,6 @@
     margin-bottom: 30px;
 }
 
-.clients {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none; 
-    margin-top: 30px;
-    margin-bottom: 60px; 
-}
-
-.clients__icon-list {
-    width: 210px;
-    height: 92px;
-    // margin-bottom: 30px;
-    // flex-basis: calc((100% - 30px) / 2);
-
-    // &:ntn-child(2n-1){
-    //     margin-right: 30px;
-    // }
-
-    // &:not(:ntn-last-child(-n+2)){
-    //     margin-bottom: 30px;
-    // }
-
-}
 
 // @media screen and (max-width:767px) {
     

@@ -6,10 +6,10 @@
 //     margin-right: auto;
 // }
 
-// .container {
-//     padding-left: 15px;
-//     padding-right: 15px; 
-// }
+.container {
+    padding-left: 15px;
+    padding-right: 15px; 
+}
 
 //480px
 @media screen and (min-width: 480px) {
@@ -33,7 +33,7 @@
 @media screen and (min-width: 1200px) {
     .container {
         width: 1200px;
-        background-color: orange;
+        background-color: transparent;
     }
 
 }

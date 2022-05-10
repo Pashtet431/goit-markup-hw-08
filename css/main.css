@@ -70,6 +70,15 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.work-section {
+  display: none;
+}
+
 .work-section {
   padding-top: 0;
 }
@@ -90,6 +99,11 @@ address {
   list-style: none;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 452px;
@@ -108,7 +122,7 @@ address {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: orange;
+    background-color: transparent;
   }
 }
 
@@ -460,15 +474,6 @@ address {
   margin-left: 30px;
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.work-section {
-  display: none;
-}
-
 .icon-advantages {
   display: block;
   align-items: center;
@@ -630,14 +635,19 @@ address {
 .clients {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  padding: 0;
   list-style: none;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  align-items: center;
+  justify-content: center;
 }
 
 .clients__icon-list {
-  width: 210px;
   height: 92px;
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 2*30px) / 2);
 }
 
 .invitation-icons {
