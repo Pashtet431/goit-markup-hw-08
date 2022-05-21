@@ -8,10 +8,10 @@ a{
     justify-content: space-between;
 }
 
-// .link {
-//     text-decoration: none;
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+.link {
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 body {
     font-family: var(--basic-title);
@@ -45,11 +45,6 @@ address {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// .section {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-// }
-
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -57,9 +52,6 @@ address {
 
 .work-section {
     display: none;
-}
-
-.work-section {
     padding-top: 0;
 }
 
@@ -82,3 +74,16 @@ address {
 
 }
 
+
+@media screen and (min-width: 1200px) {
+    .section {
+       padding-top: 94px;
+       padding-bottom: 94px;
+    }
+
+    .work-section{
+        display: block;
+    }
+
+
+}

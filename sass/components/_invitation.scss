@@ -24,16 +24,6 @@
     fill: var(--light-color);
 }
 
-.footer-invitation {
-    @include fonts (var(--basic-title), 700, 14px, 1.14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: var(--light-color);
-
-    margin-bottom: 20px;
-}
-
 .invitation {
     // margin-left: 70px;
 display: flex;

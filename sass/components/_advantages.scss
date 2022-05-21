@@ -41,10 +41,34 @@
 
 .advantages-list{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.mobile-advantage{
+    flex: 1 30 100%;
 }
 
 .advantages-list:not(:last-child) {
     margin-top: 94px;
     margin-left: 30px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .mobile-advantage{  
+    flex-basis: calc((100% / 2) - 30px);
+    }
+    .mobile-advantage{
+    margin-top: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .mobile-advantage {
+            flex-basis: calc((100% / 4) - 30px);
+        }
 }
 
