@@ -1,3 +1,23 @@
+.logo-f {
+    @include fonts (Raleway, 700, 24px, 1.16);
+    display: flex;
+    // font-family: 'Raleway', sans-serif;
+    // font-weight: 700;
+    // font-size: 26px;
+    // line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--logo-color);
+
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-s {
+    color: var(--light-color);
+}
+
 .footer{
     display: flex;
     justify-content: center;
