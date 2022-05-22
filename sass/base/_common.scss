@@ -48,6 +48,9 @@ address {
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-section {
@@ -82,7 +85,9 @@ address {
     }
 
     .work-section{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 

@@ -78,6 +78,9 @@ address {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-section {
@@ -107,19 +110,20 @@ address {
     padding-bottom: 94px;
   }
   .work-section {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 100%;
   }
 }
 
@@ -446,7 +450,7 @@ address {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/mobile-images/hero-mobile-img.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/mobile/mobile-hero-img.jpg");
   background-size: auto;
   background-color: var(--background-color-hero);
   background-position: center;
@@ -456,6 +460,12 @@ address {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/mobile/mobile-hero-img@2x.jpg");
+  }
 }
 
 .hero__main-title {
@@ -501,12 +511,30 @@ address {
     line-height: 1.61;
     width: 360px;
   }
+  .hero {
+    background-image: url("/images/tablet/tablet-hero-img.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/tablet/tablet-hero-img@2x.jpg");
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/background-hero.jpg");
+    background-image: url("/images/desktop/desktop-hero-img.jpg");
   }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/desktop/desktop-hero-img@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .hero__main-title {
     font-family: var(--basic-title);
     font-weight: 900;
@@ -693,10 +721,6 @@ address {
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
   .images {
     flex-basis: calc((100% / 3) - 30px);
   }
@@ -713,10 +737,6 @@ address {
   justify-content: center;
   gap: 30px;
   flex: 1 30px 100%;
-}
-
-.desktop-master {
-  display: none;
 }
 
 .our-team__image {
@@ -1215,6 +1235,7 @@ address {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .subscribe-field {
@@ -1235,15 +1256,18 @@ address {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 480px) {
+  .subscribe-mail {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-  }
-  .subscribe-mail {
-    width: 450px;
   }
   .mailing-footer {
     margin-left: auto;
@@ -1277,6 +1301,7 @@ address {
   }
   .subscribe-list {
     display: flex;
+    align-items: start;
   }
   .subscribe-field {
     flex-direction: row;
